@@ -36,11 +36,10 @@ body {
 
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 header{
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   margin: 1.5rem 0;
 }
 
@@ -69,7 +68,7 @@ nav {
 }
 
 #content {
-  flex: 2 1 auto;
+  flex: 9 1 auto;
 
 }
 
@@ -88,7 +87,7 @@ a:visited {
 }
 
 footer {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   padding:2rem;
   text-align: center;
 }
