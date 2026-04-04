@@ -17,16 +17,16 @@ export function createTag({
   }
 
   if (childrensList) {
-    childrensList.forEach((elem) => {
-      tag.appendChild(elem);
+    childrensList.forEach((item) => {
+      tag.appendChild(item);
     });
   }
 
   return tag;
 }
 
-export function appendChild(parent, childrens) {
-  childrens.foreach((child) => {
+export function appendChilds(parent, childrens) {
+  childrens.forEach((child) => {
     parent.appendChild(child);
   });
 }

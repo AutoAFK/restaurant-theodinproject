@@ -1,13 +1,11 @@
 import * as elements from "../elements/elements.js";
 
-export class MenuItem {
-  constructor(name, description, price) {
-    this.name = name;
-    this.description = description;
-    this.price = price;
-  }
+export default function MenuItem(name, description, price) {
+  this.name = name;
+  this.description = description;
+  this.price = price;
 
-  render = () => {
+  this.render = () => {
     const container = elements.createTag({
       element: "div",
       classList: ["menu-item"],
@@ -31,8 +29,8 @@ export class MenuItem {
       classList: ["item-price"],
     });
 
-    elements.appendChild(container, [header, body, price]);
-    
+    elements.appendChilds(container, [header, body, price]);
+
     return container;
   };
 }

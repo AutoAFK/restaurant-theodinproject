@@ -1,5 +1,6 @@
 
 import MainPage from "./pages/main-page.js";
+import MenuPage from "./pages/menu-page.js";
 import "./styles/main.css";
 
 const app = document.querySelector("#content");
@@ -8,7 +9,7 @@ const navbar = document.querySelector("nav");
 
 const pages = {
   "home" : MainPage,
-  // "menu" : MenuPage,
+  "menu" : MenuPage,
   // "contact" : ContactPage,
 }
 
