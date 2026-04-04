@@ -32,5 +32,7 @@ export class MenuItem {
     });
 
     elements.appendChild(container, [header, body, price]);
+    
+    return container;
   };
 }
