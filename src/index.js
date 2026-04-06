@@ -1,6 +1,7 @@
 
 import MainPage from "./pages/main-page.js";
 import MenuPage from "./pages/menu-page.js";
+import ContactPage from "./pages/contact-page.js";
 import "./styles/main.css";
 
 const app = document.querySelector("#content");
@@ -10,7 +11,7 @@ const navbar = document.querySelector("nav");
 const pages = {
   "home" : MainPage,
   "menu" : MenuPage,
-  // "contact" : ContactPage,
+  "contact" : ContactPage,
 }
 
 navbar.addEventListener("click", (event) => {
