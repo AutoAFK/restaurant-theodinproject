@@ -4,10 +4,14 @@ import path from "node:path";
 export default {
   mode: "development",
   entry: "./src/index.js",
+  experiments: {
+    outputModule: true,
+  },
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
     clean: true,
+    module: true,
   },
   devtool: "eval-source-map",
   devServer: {
