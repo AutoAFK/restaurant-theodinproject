@@ -1,3 +1,18 @@
 .menu-item {
   display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 10px 20px;
+  border-bottom: 1px dashed #000;
+  gap:5px;
 }
+
+.item-header{
+  grid-column: 1 / span 2;
+}
+
+.item-price::before{
+  content: "$";
+}
+
+
+
